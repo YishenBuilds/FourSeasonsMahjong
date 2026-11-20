@@ -14,7 +14,7 @@
   p, li { margin: 6px 0; }
   ul { padding-left: 22px; }
   .meta { opacity: .7; font-size: 14px; }
-  .switch { display: flex; gap: 8px; margin-top: 8px; }
+  .switch { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
   .switch button { font: inherit; font-size: 14px; padding: 6px 14px; border: 1px solid #c9b79d; border-radius: 8px; background: #fff; color: inherit; cursor: pointer; }
   .switch button[aria-pressed="true"] { background: #7a4a1c; color: #fff; border-color: #7a4a1c; }
   section[hidden] { display: none; }
@@ -23,9 +23,24 @@
 <body>
 <main>
   <div class="switch" role="group" aria-label="Language / 语言 / 語言">
-    <button type="button" data-lang="zh-CN" aria-pressed="false">简体中文</button>
-    <button type="button" data-lang="zh-TW" aria-pressed="false">繁體中文</button>
-    <button type="button" data-lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="zh-CN" lang="zh-CN" aria-pressed="false">简体中文</button>
+    <button type="button" data-lang="zh-TW" lang="zh-TW" aria-pressed="false">繁體中文</button>
+    <button type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="ar" lang="ar" aria-pressed="false">العربية</button>
+    <button type="button" data-lang="de" lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="es" lang="es" aria-pressed="false">Español</button>
+    <button type="button" data-lang="fr" lang="fr" aria-pressed="false">Français</button>
+    <button type="button" data-lang="id" lang="id" aria-pressed="false">Bahasa Indonesia</button>
+    <button type="button" data-lang="it" lang="it" aria-pressed="false">Italiano</button>
+    <button type="button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+    <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+    <button type="button" data-lang="nl" lang="nl" aria-pressed="false">Nederlands</button>
+    <button type="button" data-lang="pt-BR" lang="pt-BR" aria-pressed="false">Português (Brasil)</button>
+    <button type="button" data-lang="ru" lang="ru" aria-pressed="false">Русский</button>
+    <button type="button" data-lang="sv" lang="sv" aria-pressed="false">Svenska</button>
+    <button type="button" data-lang="th" lang="th" aria-pressed="false">ไทย</button>
+    <button type="button" data-lang="tr" lang="tr" aria-pressed="false">Türkçe</button>
+    <button type="button" data-lang="vi" lang="vi" aria-pressed="false">Tiếng Việt</button>
   </div>
 
   <section lang="zh-CN" data-lang="zh-CN">
@@ -52,7 +67,7 @@
     <p>如果以后 App 的做法发生变化（例如增加联网功能），我们会先更新本页面并修改上方的生效日期，再发布新版本；重大变化会在 App 的更新说明中提示。</p>
 
     <h2>7. 联系我们</h2>
-    <p>对本政策有任何问题，请发邮件至：<a href="mailto:3649594286@qq.com">3649594286@qq.com</a></p>
+    <p>对本政策有任何问题，请发邮件至：<bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
     <p>开发者：一燊Builds / YishenBuilds。邮件由开发者人工查看，目标 72 小时内回复。</p>
   </section>
 
@@ -80,7 +95,7 @@
     <p>如果日後 App 的做法有所改變（例如新增連網功能），我們會先更新本頁面並修改上方的生效日期，再發布新版本；重大變更會在 App 的更新說明中提示。</p>
 
     <h2>7. 聯絡我們</h2>
-    <p>對本政策有任何問題，請來信：<a href="mailto:3649594286@qq.com">3649594286@qq.com</a></p>
+    <p>對本政策有任何問題，請來信：<bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
     <p>開發者：一燊Builds / YishenBuilds。郵件由開發者親自查看，目標 72 小時內回覆。</p>
   </section>
 
@@ -108,8 +123,428 @@
     <p>If the app's practices change in the future (for example, if it gains online features), we will update this page and the effective date above before releasing the new version, and note significant changes in the app's release notes.</p>
 
     <h2>7. Contact</h2>
-    <p>If you have any questions about this policy, please email: <a href="mailto:3649594286@qq.com">3649594286@qq.com</a></p>
+    <p>If you have any questions about this policy, please email: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
     <p>Developer: YishenBuilds. Emails are read by the developer, with a 72-hour reply target.</p>
+  </section>
+
+  <section lang="ar" data-lang="ar" dir="rtl" hidden>
+    <h1>Mahjong Realms (雀境) سياسة الخصوصية</h1>
+    <p class="meta">تاريخ السريان: 18 نوفمبر 2026</p>
+    <p>Mahjong Realms لعبة ماجونغ سيتشوان للاعب واحد: تلعب وحدك ضد ثلاثة خصوم يديرهم الحاسوب. توضح هذه السياسة كيف يتعامل التطبيق مع معلوماتك. باختصار: <strong>نحن لا نجمع أي معلومات شخصية عنك.</strong></p>
+
+    <h2>1. ما الذي نجمعه</h2>
+    <p>لا شيء. لا يوجد في التطبيق حسابات ولا تسجيل دخول. ولا يطلب اسمك ولا بريدك الإلكتروني ولا رقم هاتفك ولا موقعك ولا جهات اتصالك ولا صورك ولا إذن الميكروفون أو الكاميرا، ولا يقرأ معرّفات الجهاز مثل معرّف الإعلانات.</p>
+
+    <h2>2. استخدام الشبكة</h2>
+    <p>يعمل التطبيق دون اتصال بالإنترنت بالكامل: الرسومات والأصوات والقواعد كلها داخل حزمة التطبيق، ويحظر التطبيق بنشاط أي طلبات شبكة صادرة. لا يُرسل أي شيء إلينا أو إلى أي طرف ثالث أثناء اللعب.</p>
+
+    <h2>3. ما يبقى على جهازك</h2>
+    <p>لتتمكن من متابعة اللعب لاحقًا، يحفظ التطبيق على جهازك: إعدادات الواجهة (السمة، تشغيل/إيقاف الموسيقى، تشغيل/إيقاف المؤثرات الصوتية، اللغة)، وحفظ الجولة الجارية، وذاكرة تخزين مؤقت للحسابات تسرّع العرض. توجد هذه البيانات على جهازك فقط ولا يمكننا الوصول إليها، وتُحذف عند حذف التطبيق.</p>
+
+    <h2>4. الأطراف الثالثة والإحصاءات والإعلانات</h2>
+    <p>لا يحتوي التطبيق على أي حزم SDK لأطراف ثالثة، ولا يستخدم أدوات إحصاء أو تحليل، ولا يعرض إعلانات، ولا يجري أي تتبع عبر التطبيقات أو المواقع.</p>
+
+    <h2>5. خصوصية الأطفال</h2>
+    <p>بما أننا لا نجمع أي معلومات شخصية، فنحن لا نجمعها من المستخدمين مهما كانت أعمارهم، بمن فيهم الأطفال. إذا كنت أحد الوالدين أو وليّ أمر ولديك أسئلة، فيُرجى التواصل معنا عبر العنوان أدناه.</p>
+
+    <h2>6. تغييرات السياسة</h2>
+    <p>إذا تغيّرت ممارسات التطبيق مستقبلًا (مثل إضافة ميزات تتطلب الإنترنت)، فسنحدّث هذه الصفحة وتاريخ السريان أعلاه قبل إصدار النسخة الجديدة، وسننوّه بالتغييرات المهمة في ملاحظات إصدار التطبيق.</p>
+
+    <h2>7. التواصل معنا</h2>
+    <p>إذا كان لديك أي سؤال عن هذه السياسة، فراسلنا على: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>المطوّر: YishenBuilds. يقرأ المطوّر الرسائل بنفسه، ونهدف إلى الرد خلال 72 ساعة.</p>
+  </section>
+
+  <section lang="de" data-lang="de" hidden>
+    <h1>Mahjong Realms (雀境) Datenschutzerklärung</h1>
+    <p class="meta">Gültig ab: 18. November 2026</p>
+    <p>Mahjong Realms ist ein Sichuan-Mahjong-Spiel für einen Spieler: Du spielst allein gegen drei Computergegner. Diese Erklärung beschreibt, wie die App mit deinen Informationen umgeht. Kurz gesagt: <strong>Wir erheben keinerlei personenbezogene Daten.</strong></p>
+
+    <h2>1. Was wir erheben</h2>
+    <p>Nichts. Die App hat keine Konten und keine Anmeldung. Sie fragt weder nach deinem Namen, deiner E-Mail-Adresse, Telefonnummer, deinem Standort, deinen Kontakten, Fotos, deinem Mikrofon noch deiner Kamera und liest keine Gerätekennungen wie die Werbe-ID aus.</p>
+
+    <h2>2. Netzwerknutzung</h2>
+    <p>Die App läuft vollständig offline: Grafiken, Töne und Regeln befinden sich im App-Paket, und die App blockiert ausgehende Netzwerkanfragen aktiv. Während des Spiels werden keine Daten an uns oder an Dritte gesendet.</p>
+
+    <h2>3. Was auf deinem Gerät bleibt</h2>
+    <p>Damit du später weiterspielen kannst, speichert die App auf deinem Gerät: deine Oberflächeneinstellungen (Design, Musik an/aus, Soundeffekte an/aus, Sprache), den Spielstand der laufenden Runde und einen Rechen-Cache, der die Darstellung beschleunigt. Diese Daten existieren nur auf deinem Gerät, wir können nicht darauf zugreifen. Wird die App gelöscht, werden sie mitgelöscht.</p>
+
+    <h2>4. Dritte, Analyse und Werbung</h2>
+    <p>Die App enthält keine SDKs von Drittanbietern, nutzt keine Analyse- oder Statistikwerkzeuge, zeigt keine Werbung und betreibt kein Tracking über Apps oder Websites hinweg.</p>
+
+    <h2>5. Datenschutz für Kinder</h2>
+    <p>Da wir keine personenbezogenen Daten erheben, erheben wir auch von Nutzern jeden Alters, einschließlich Kindern, keine. Wenn du Elternteil oder Erziehungsberechtigter bist und Fragen hast, kontaktiere uns bitte unter der unten stehenden Adresse.</p>
+
+    <h2>6. Änderungen dieser Erklärung</h2>
+    <p>Sollte sich die Arbeitsweise der App künftig ändern (zum Beispiel durch Online-Funktionen), aktualisieren wir diese Seite und das obige Datum, bevor wir die neue Version veröffentlichen, und weisen bei wesentlichen Änderungen in den Versionshinweisen der App darauf hin.</p>
+
+    <h2>7. Kontakt</h2>
+    <p>Bei Fragen zu dieser Erklärung schreib bitte an: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Entwickler: YishenBuilds. E-Mails werden vom Entwickler selbst gelesen; Ziel ist eine Antwort innerhalb von 72 Stunden.</p>
+  </section>
+
+  <section lang="es" data-lang="es" hidden>
+    <h1>Mahjong Realms (雀境) Política de privacidad</h1>
+    <p class="meta">Fecha de entrada en vigor: 18 de noviembre de 2026</p>
+    <p>Mahjong Realms es un juego de mahjong de Sichuan para un jugador: juegas solo contra tres rivales controlados por el ordenador. Esta política explica cómo trata la app tu información. En resumen: <strong>no recopilamos ninguna información personal.</strong></p>
+
+    <h2>1. Qué recopilamos</h2>
+    <p>Nada. La app no tiene cuentas ni inicio de sesión. No pide tu nombre, correo electrónico, número de teléfono, ubicación, contactos, fotos, micrófono ni cámara, y no lee identificadores del dispositivo como el identificador de publicidad.</p>
+
+    <h2>2. Uso de la red</h2>
+    <p>La app funciona totalmente sin conexión: los gráficos, los sonidos y las reglas están dentro del paquete de la app, y la app bloquea activamente las solicitudes de red salientes. No se envía nada a nosotros ni a terceros mientras juegas.</p>
+
+    <h2>3. Qué se queda en tu dispositivo</h2>
+    <p>Para que puedas retomar la partida, la app guarda en tu dispositivo: los ajustes de la interfaz (tema, música activada o no, efectos de sonido activados o no, idioma), el guardado de la partida en curso y una caché de cálculo que acelera la visualización. Estos datos solo existen en tu dispositivo y no podemos acceder a ellos. Al borrar la app se eliminan también.</p>
+
+    <h2>4. Terceros, analítica y anuncios</h2>
+    <p>La app no contiene SDK de terceros, no usa herramientas de analítica ni estadísticas, no muestra anuncios y no realiza seguimiento entre apps ni sitios web.</p>
+
+    <h2>5. Privacidad de los niños</h2>
+    <p>Como no recopilamos información personal, tampoco la recopilamos de usuarios de ninguna edad, incluidos los niños. Si eres padre, madre o tutor y tienes preguntas, contáctanos en la dirección que aparece abajo.</p>
+
+    <h2>6. Cambios en esta política</h2>
+    <p>Si en el futuro cambian las prácticas de la app (por ejemplo, si incorpora funciones en línea), actualizaremos esta página y la fecha de entrada en vigor antes de publicar la nueva versión, y indicaremos los cambios importantes en las notas de la versión.</p>
+
+    <h2>7. Contacto</h2>
+    <p>Si tienes cualquier pregunta sobre esta política, escribe a: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Desarrollador: YishenBuilds. Los correos los lee el propio desarrollador, con el objetivo de responder en 72 horas.</p>
+  </section>
+
+  <section lang="fr" data-lang="fr" hidden>
+    <h1>Mahjong Realms (雀境) Politique de confidentialité</h1>
+    <p class="meta">Date d’entrée en vigueur : 18 novembre 2026</p>
+    <p>Mahjong Realms est un jeu de mahjong du Sichuan pour un seul joueur : vous jouez seul contre trois adversaires contrôlés par l’ordinateur. Cette politique explique comment l’app traite vos informations. En bref : <strong>nous ne collectons aucune information personnelle.</strong></p>
+
+    <h2>1. Ce que nous collectons</h2>
+    <p>Rien. L’app n’a ni compte ni connexion. Elle ne demande ni votre nom, ni votre adresse e-mail, ni votre numéro de téléphone, ni votre position, vos contacts, vos photos, votre micro ou votre caméra, et ne lit aucun identifiant d’appareil comme l’identifiant publicitaire.</p>
+
+    <h2>2. Utilisation du réseau</h2>
+    <p>L’app fonctionne entièrement hors ligne : les graphismes, les sons et les règles sont tous inclus dans le paquet de l’app, et l’app bloque activement les requêtes réseau sortantes. Rien n’est envoyé à nous ni à un tiers pendant que vous jouez.</p>
+
+    <h2>3. Ce qui reste sur votre appareil</h2>
+    <p>Pour que vous puissiez reprendre votre partie, l’app enregistre sur votre appareil : vos réglages d’interface (thème, musique activée ou non, effets sonores activés ou non, langue), la sauvegarde de la partie en cours et un cache de calcul qui accélère l’affichage. Ces données n’existent que sur votre appareil et nous n’y avons pas accès. Elles sont supprimées avec l’app.</p>
+
+    <h2>4. Tiers, statistiques et publicité</h2>
+    <p>L’app ne contient aucun SDK tiers, n’utilise aucun outil d’analyse ou de statistiques, n’affiche aucune publicité et n’effectue aucun suivi entre apps ou sites web.</p>
+
+    <h2>5. Confidentialité des enfants</h2>
+    <p>Comme nous ne collectons aucune information personnelle, nous n’en collectons aucune auprès des utilisateurs de quelque âge que ce soit, enfants compris. Si vous êtes parent ou tuteur et avez des questions, contactez-nous à l’adresse ci-dessous.</p>
+
+    <h2>6. Modifications de cette politique</h2>
+    <p>Si les pratiques de l’app changent à l’avenir (par exemple avec des fonctions en ligne), nous mettrons à jour cette page et la date d’entrée en vigueur ci-dessus avant de publier la nouvelle version, et nous signalerons les changements importants dans les notes de version de l’app.</p>
+
+    <h2>7. Contact</h2>
+    <p>Pour toute question sur cette politique, écrivez à : <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Développeur : YishenBuilds. Les e-mails sont lus par le développeur, avec un objectif de réponse sous 72 heures.</p>
+  </section>
+
+  <section lang="id" data-lang="id" hidden>
+    <h1>Mahjong Realms (雀境) Kebijakan Privasi</h1>
+    <p class="meta">Berlaku sejak: 18 November 2026</p>
+    <p>Mahjong Realms adalah permainan mahjong Sichuan untuk satu pemain: kamu bermain sendiri melawan tiga lawan komputer. Kebijakan ini menjelaskan bagaimana aplikasi memperlakukan informasimu. Singkatnya: <strong>kami tidak mengumpulkan informasi pribadi apa pun.</strong></p>
+
+    <h2>1. Apa yang kami kumpulkan</h2>
+    <p>Tidak ada. Aplikasi ini tidak punya akun dan tidak perlu masuk. Aplikasi tidak meminta nama, alamat email, nomor telepon, lokasi, kontak, foto, mikrofon, atau kamera, dan tidak membaca pengenal perangkat seperti pengenal iklan.</p>
+
+    <h2>2. Penggunaan jaringan</h2>
+    <p>Aplikasi berjalan sepenuhnya secara luring: grafis, suara, dan aturan semuanya ada di dalam paket aplikasi, dan aplikasi secara aktif memblokir permintaan jaringan keluar. Tidak ada data yang dikirim kepada kami atau pihak ketiga saat kamu bermain.</p>
+
+    <h2>3. Yang tersimpan di perangkatmu</h2>
+    <p>Agar kamu bisa melanjutkan permainan, aplikasi menyimpan di perangkatmu: pengaturan antarmuka (tema, musik aktif/mati, efek suara aktif/mati, bahasa), simpanan permainan yang sedang berjalan, dan cache perhitungan yang mempercepat tampilan. Data ini hanya ada di perangkatmu dan kami tidak dapat mengaksesnya. Menghapus aplikasi akan ikut menghapusnya.</p>
+
+    <h2>4. Pihak ketiga, analitik, dan iklan</h2>
+    <p>Aplikasi tidak memuat SDK pihak ketiga, tidak memakai alat analitik atau statistik, tidak menampilkan iklan, dan tidak melakukan pelacakan lintas aplikasi atau situs web.</p>
+
+    <h2>5. Privasi anak</h2>
+    <p>Karena kami tidak mengumpulkan informasi pribadi apa pun, kami juga tidak mengumpulkannya dari pengguna usia berapa pun, termasuk anak-anak. Jika kamu orang tua atau wali dan memiliki pertanyaan, silakan hubungi kami melalui alamat di bawah.</p>
+
+    <h2>6. Perubahan kebijakan</h2>
+    <p>Jika praktik aplikasi berubah di kemudian hari (misalnya menambah fitur daring), kami akan memperbarui halaman ini dan tanggal berlaku di atas sebelum merilis versi baru, serta mencantumkan perubahan penting dalam catatan rilis aplikasi.</p>
+
+    <h2>7. Kontak</h2>
+    <p>Jika ada pertanyaan tentang kebijakan ini, kirim email ke: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Pengembang: YishenBuilds. Email dibaca langsung oleh pengembang, dengan target balasan dalam 72 jam.</p>
+  </section>
+
+  <section lang="it" data-lang="it" hidden>
+    <h1>Mahjong Realms (雀境) Informativa sulla privacy</h1>
+    <p class="meta">Data di entrata in vigore: 18 novembre 2026</p>
+    <p>Mahjong Realms è un gioco di mahjong del Sichuan per un solo giocatore: giochi da solo contro tre avversari controllati dal computer. Questa informativa spiega come l’app tratta le tue informazioni. In breve: <strong>non raccogliamo alcuna informazione personale.</strong></p>
+
+    <h2>1. Cosa raccogliamo</h2>
+    <p>Niente. L’app non ha account né accesso. Non chiede nome, indirizzo e-mail, numero di telefono, posizione, contatti, foto, microfono o fotocamera e non legge identificatori del dispositivo come l’identificatore pubblicitario.</p>
+
+    <h2>2. Uso della rete</h2>
+    <p>L’app funziona interamente offline: grafica, suoni e regole sono tutti dentro il pacchetto dell’app, e l’app blocca attivamente le richieste di rete in uscita. Mentre giochi non viene inviato nulla a noi né a terzi.</p>
+
+    <h2>3. Cosa resta sul tuo dispositivo</h2>
+    <p>Per permetterti di riprendere la partita, l’app salva sul dispositivo: le impostazioni dell’interfaccia (tema, musica attiva o no, effetti sonori attivi o no, lingua), il salvataggio della partita in corso e una cache di calcolo che velocizza la visualizzazione. Questi dati esistono solo sul tuo dispositivo e noi non possiamo accedervi. Eliminando l’app vengono eliminati anch’essi.</p>
+
+    <h2>4. Terze parti, analisi e pubblicità</h2>
+    <p>L’app non contiene SDK di terze parti, non usa strumenti di analisi o statistica, non mostra pubblicità e non effettua tracciamento tra app o siti web.</p>
+
+    <h2>5. Privacy dei minori</h2>
+    <p>Poiché non raccogliamo informazioni personali, non ne raccogliamo da utenti di nessuna età, bambini compresi. Se sei un genitore o un tutore e hai domande, contattaci all’indirizzo qui sotto.</p>
+
+    <h2>6. Modifiche a questa informativa</h2>
+    <p>Se in futuro le pratiche dell’app cambiassero (ad esempio con funzioni online), aggiorneremo questa pagina e la data di entrata in vigore prima di pubblicare la nuova versione, e segnaleremo le modifiche importanti nelle note di rilascio dell’app.</p>
+
+    <h2>7. Contatti</h2>
+    <p>Per qualsiasi domanda su questa informativa, scrivi a: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Sviluppatore: YishenBuilds. Le e-mail sono lette dallo sviluppatore, con l’obiettivo di rispondere entro 72 ore.</p>
+  </section>
+
+  <section lang="ja" data-lang="ja" hidden>
+    <h1>Mahjong Realms（雀境）プライバシーポリシー</h1>
+    <p class="meta">施行日：2026年11月18日</p>
+    <p>Mahjong Realms は、1人で遊ぶ四川麻雀ゲームです。あなた1人で、コンピューターの対戦相手3人と対局します。このポリシーでは、アプリがあなたの情報をどう扱うかを説明します。ひとことで言えば、<strong>個人情報は一切収集しません。</strong></p>
+
+    <h2>1. 収集する情報</h2>
+    <p>何も収集しません。アプリにはアカウントもログインもありません。氏名、メールアドレス、電話番号、位置情報、連絡先、写真、マイク、カメラの許可は求めず、広告用識別子などの端末識別子も読み取りません。</p>
+
+    <h2>2. 通信について</h2>
+    <p>アプリは完全にオフラインで動作します。画面、音、ルールはすべてアプリのパッケージに含まれており、外部へのネットワーク通信は積極的にブロックしています。対局中に、当方や第三者へデータが送信されることはありません。</p>
+
+    <h2>3. 端末に保存される内容</h2>
+    <p>次回続きから遊べるよう、アプリは端末内に次の内容を保存します。画面の設定（テーマ、BGMのオン・オフ、効果音のオン・オフ、言語）、進行中の対局のセーブデータ、表示を速くするための計算キャッシュです。これらは端末内にだけ存在し、当方からはアクセスできません。アプリを削除すると一緒に削除されます。</p>
+
+    <h2>4. 第三者・統計・広告</h2>
+    <p>アプリには第三者のSDKを含まず、統計や分析ツールを使わず、広告も表示せず、アプリやWebサイトをまたぐトラッキングも行いません。</p>
+
+    <h2>5. お子さまのプライバシー</h2>
+    <p>当方は個人情報を一切収集しないため、お子さまを含むどの年齢のユーザーからも収集しません。保護者の方でご不明な点があれば、下記の連絡先までお知らせください。</p>
+
+    <h2>6. ポリシーの変更</h2>
+    <p>今後アプリの扱いが変わる場合（たとえばオンライン機能の追加など）は、新しいバージョンを公開する前に、このページと上記の施行日を更新します。重要な変更はアプリの更新情報でもお知らせします。</p>
+
+    <h2>7. お問い合わせ</h2>
+    <p>このポリシーについてのご質問は、次のアドレスまでメールでお送りください：<bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>開発者：YishenBuilds。メールは開発者が直接確認し、72時間以内の返信を目標としています。</p>
+  </section>
+
+  <section lang="ko" data-lang="ko" hidden>
+    <h1>Mahjong Realms (雀境) 개인정보 처리방침</h1>
+    <p class="meta">시행일: 2026년 11월 18일</p>
+    <p>Mahjong Realms는 혼자 즐기는 쓰촨 마작 게임입니다. 혼자서 컴퓨터 상대 세 명과 대국합니다. 이 방침은 앱이 여러분의 정보를 어떻게 다루는지 설명합니다. 한마디로: <strong>저희는 어떤 개인정보도 수집하지 않습니다.</strong></p>
+
+    <h2>1. 수집하는 정보</h2>
+    <p>아무것도 수집하지 않습니다. 앱에는 계정도 로그인도 없습니다. 이름, 이메일, 전화번호, 위치, 연락처, 사진, 마이크, 카메라 권한을 요구하지 않으며 광고 식별자 같은 기기 식별자도 읽지 않습니다.</p>
+
+    <h2>2. 네트워크 사용</h2>
+    <p>앱은 완전히 오프라인으로 동작합니다. 화면, 소리, 규칙이 모두 앱 패키지 안에 들어 있고, 앱은 외부로 나가는 모든 네트워크 요청을 적극적으로 차단합니다. 게임을 하는 동안 저희나 제3자에게 어떤 데이터도 전송되지 않습니다.</p>
+
+    <h2>3. 기기에 저장되는 내용</h2>
+    <p>다음에 이어서 즐길 수 있도록 앱은 기기 안에 다음을 저장합니다. 화면 설정(테마, 배경음악 켜기/끄기, 효과음 켜기/끄기, 언어), 진행 중인 대국의 저장 데이터, 화면 표시를 빠르게 하는 계산 캐시입니다. 이 내용은 기기에만 존재하며 저희는 접근할 수 없습니다. 앱을 삭제하면 함께 삭제됩니다.</p>
+
+    <h2>4. 제3자, 통계, 광고</h2>
+    <p>앱에는 제3자 SDK가 없고, 통계나 분석 도구를 사용하지 않으며, 광고를 표시하지 않고, 앱이나 웹사이트를 넘나드는 추적도 하지 않습니다.</p>
+
+    <h2>5. 아동의 개인정보</h2>
+    <p>저희는 어떤 개인정보도 수집하지 않으므로, 아동을 포함해 어떤 연령의 사용자에게서도 수집하지 않습니다. 보호자이시고 궁금한 점이 있다면 아래 연락처로 알려 주세요.</p>
+
+    <h2>6. 방침 변경</h2>
+    <p>앞으로 앱의 운영 방식이 바뀌면(예: 온라인 기능 추가) 새 버전을 배포하기 전에 이 페이지와 위의 시행일을 먼저 갱신하고, 중요한 변경은 앱의 업데이트 안내에도 알립니다.</p>
+
+    <h2>7. 문의</h2>
+    <p>이 방침에 대한 질문은 다음 주소로 이메일을 보내 주세요: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>개발자: YishenBuilds. 이메일은 개발자가 직접 확인하며 72시간 이내 답변을 목표로 합니다.</p>
+  </section>
+
+  <section lang="nl" data-lang="nl" hidden>
+    <h1>Mahjong Realms (雀境) Privacybeleid</h1>
+    <p class="meta">Ingangsdatum: 18 november 2026</p>
+    <p>Mahjong Realms is een Sichuan-mahjongspel voor één speler: je speelt alleen tegen drie computertegenstanders. In dit beleid lees je hoe de app met je gegevens omgaat. Kort gezegd: <strong>we verzamelen geen enkele persoonlijke informatie.</strong></p>
+
+    <h2>1. Wat we verzamelen</h2>
+    <p>Niets. De app heeft geen accounts en geen inlog. Ze vraagt niet om je naam, e-mailadres, telefoonnummer, locatie, contacten, foto’s, microfoon of camera en leest geen apparaat-ID’s zoals de advertentie-ID.</p>
+
+    <h2>2. Netwerkgebruik</h2>
+    <p>De app werkt volledig offline: beeld, geluid en regels zitten allemaal in het app-pakket, en de app blokkeert actief uitgaande netwerkverzoeken. Tijdens het spelen wordt niets naar ons of naar derden verzonden.</p>
+
+    <h2>3. Wat op je apparaat blijft</h2>
+    <p>Zodat je later verder kunt spelen, bewaart de app op je apparaat: je interface-instellingen (thema, muziek aan/uit, geluidseffecten aan/uit, taal), de opslag van het spel dat bezig is en een rekencache die de weergave versnelt. Deze gegevens staan alleen op je apparaat en wij hebben er geen toegang toe. Als je de app verwijdert, worden ze ook verwijderd.</p>
+
+    <h2>4. Derden, analyse en advertenties</h2>
+    <p>De app bevat geen SDK’s van derden, gebruikt geen analyse- of statistiekhulpmiddelen, toont geen advertenties en volgt je niet over apps of websites heen.</p>
+
+    <h2>5. Privacy van kinderen</h2>
+    <p>Omdat we geen persoonlijke informatie verzamelen, verzamelen we die ook niet van gebruikers van welke leeftijd dan ook, kinderen inbegrepen. Ben je ouder of voogd en heb je vragen, neem dan contact met ons op via het onderstaande adres.</p>
+
+    <h2>6. Wijzigingen in dit beleid</h2>
+    <p>Als de werkwijze van de app in de toekomst verandert (bijvoorbeeld door onlinefuncties), werken we deze pagina en de ingangsdatum hierboven bij voordat we de nieuwe versie uitbrengen, en vermelden we belangrijke wijzigingen in de release-opmerkingen van de app.</p>
+
+    <h2>7. Contact</h2>
+    <p>Heb je vragen over dit beleid, mail dan naar: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Ontwikkelaar: YishenBuilds. E-mails worden door de ontwikkelaar zelf gelezen, met als doel binnen 72 uur te antwoorden.</p>
+  </section>
+
+  <section lang="pt-BR" data-lang="pt-BR" hidden>
+    <h1>Mahjong Realms (雀境) Política de Privacidade</h1>
+    <p class="meta">Data de vigência: 18 de novembro de 2026</p>
+    <p>Mahjong Realms é um jogo de mahjong de Sichuan para um jogador: você joga sozinho contra três adversários controlados pelo computador. Esta política explica como o app trata as suas informações. Resumindo: <strong>não coletamos nenhuma informação pessoal.</strong></p>
+
+    <h2>1. O que coletamos</h2>
+    <p>Nada. O app não tem contas nem login. Ele não pede seu nome, e-mail, telefone, localização, contatos, fotos, microfone ou câmera, e não lê identificadores do dispositivo, como o identificador de publicidade.</p>
+
+    <h2>2. Uso da rede</h2>
+    <p>O app funciona totalmente off-line: os gráficos, os sons e as regras estão todos dentro do pacote do app, e o app bloqueia ativamente as requisições de rede de saída. Nada é enviado para nós nem para terceiros enquanto você joga.</p>
+
+    <h2>3. O que fica no seu dispositivo</h2>
+    <p>Para que você possa continuar de onde parou, o app guarda no seu dispositivo: as configurações da interface (tema, música ligada ou desligada, efeitos sonoros ligados ou desligados, idioma), o salvamento da partida em andamento e um cache de cálculo que acelera a exibição. Esses dados existem apenas no seu dispositivo e não temos acesso a eles. Ao excluir o app, eles também são excluídos.</p>
+
+    <h2>4. Terceiros, análises e anúncios</h2>
+    <p>O app não contém SDKs de terceiros, não usa ferramentas de análise ou estatística, não exibe anúncios e não faz rastreamento entre apps ou sites.</p>
+
+    <h2>5. Privacidade de crianças</h2>
+    <p>Como não coletamos nenhuma informação pessoal, também não coletamos de usuários de nenhuma idade, inclusive crianças. Se você é pai, mãe ou responsável e tem dúvidas, entre em contato pelo endereço abaixo.</p>
+
+    <h2>6. Alterações nesta política</h2>
+    <p>Se no futuro as práticas do app mudarem (por exemplo, se ele ganhar recursos on-line), atualizaremos esta página e a data de vigência acima antes de lançar a nova versão e destacaremos as mudanças importantes nas notas de versão do app.</p>
+
+    <h2>7. Contato</h2>
+    <p>Se tiver qualquer dúvida sobre esta política, envie um e-mail para: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Desenvolvedor: YishenBuilds. Os e-mails são lidos pelo próprio desenvolvedor, com meta de resposta em 72 horas.</p>
+  </section>
+
+  <section lang="ru" data-lang="ru" hidden>
+    <h1>Mahjong Realms (雀境) Политика конфиденциальности</h1>
+    <p class="meta">Дата вступления в силу: 18 ноября 2026 г.</p>
+    <p>Mahjong Realms — одиночная игра в сычуаньский маджонг: вы играете в одиночку против трёх компьютерных соперников. В этой политике объясняется, как приложение обращается с вашей информацией. Коротко: <strong>мы не собираем никакой личной информации.</strong></p>
+
+    <h2>1. Что мы собираем</h2>
+    <p>Ничего. В приложении нет аккаунтов и входа. Оно не запрашивает имя, адрес электронной почты, номер телефона, местоположение, контакты, фото, доступ к микрофону или камере и не считывает идентификаторы устройства, например рекламный идентификатор.</p>
+
+    <h2>2. Использование сети</h2>
+    <p>Приложение работает полностью офлайн: графика, звуки и правила находятся внутри пакета приложения, а исходящие сетевые запросы приложение активно блокирует. Во время игры нам и третьим лицам ничего не отправляется.</p>
+
+    <h2>3. Что хранится на вашем устройстве</h2>
+    <p>Чтобы вы могли продолжить игру позже, приложение хранит на устройстве: настройки интерфейса (тема, музыка вкл/выкл, звуки вкл/выкл, язык), сохранение текущей партии и кэш вычислений, ускоряющий отображение. Эти данные есть только на вашем устройстве, и мы не имеем к ним доступа. При удалении приложения они удаляются.</p>
+
+    <h2>4. Третьи лица, аналитика и реклама</h2>
+    <p>В приложении нет SDK третьих сторон, оно не использует инструменты аналитики или статистики, не показывает рекламу и не отслеживает вас между приложениями и сайтами.</p>
+
+    <h2>5. Конфиденциальность детей</h2>
+    <p>Поскольку мы не собираем личную информацию, мы не собираем её и у пользователей любого возраста, включая детей. Если вы родитель или опекун и у вас есть вопросы, свяжитесь с нами по адресу ниже.</p>
+
+    <h2>6. Изменения политики</h2>
+    <p>Если в будущем практика работы приложения изменится (например, появятся онлайн-функции), мы обновим эту страницу и дату вступления в силу выше до выпуска новой версии, а о существенных изменениях сообщим в описании обновления приложения.</p>
+
+    <h2>7. Контакты</h2>
+    <p>Если у вас есть вопросы об этой политике, напишите на адрес: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Разработчик: YishenBuilds. Письма читает сам разработчик; цель — ответить в течение 72 часов.</p>
+  </section>
+
+  <section lang="sv" data-lang="sv" hidden>
+    <h1>Mahjong Realms (雀境) Integritetspolicy</h1>
+    <p class="meta">Gäller från: 18 november 2026</p>
+    <p>Mahjong Realms är ett Sichuan-mahjongspel för en spelare: du spelar ensam mot tre datormotståndare. Den här policyn förklarar hur appen behandlar din information. Kort sagt: <strong>vi samlar inte in någon personlig information.</strong></p>
+
+    <h2>1. Vad vi samlar in</h2>
+    <p>Ingenting. Appen har inga konton och ingen inloggning. Den ber inte om ditt namn, din e-postadress, ditt telefonnummer, din plats, dina kontakter, bilder, mikrofon eller kamera och läser inte enhetsidentifierare som reklam-ID.</p>
+
+    <h2>2. Nätverksanvändning</h2>
+    <p>Appen fungerar helt offline: grafik, ljud och regler finns i appens paket, och appen blockerar aktivt utgående nätverksanrop. Ingenting skickas till oss eller till tredje part medan du spelar.</p>
+
+    <h2>3. Vad som stannar på din enhet</h2>
+    <p>För att du ska kunna fortsätta där du slutade sparar appen på din enhet: dina gränssnittsinställningar (tema, musik på/av, ljudeffekter på/av, språk), sparningen av pågående spel och en beräkningscache som gör att visningen går snabbare. Den här informationen finns bara på din enhet och vi kan inte komma åt den. Om du tar bort appen tas den också bort.</p>
+
+    <h2>4. Tredje part, analys och annonser</h2>
+    <p>Appen innehåller inga SDK:er från tredje part, använder inga analys- eller statistikverktyg, visar inga annonser och spårar dig inte mellan appar eller webbplatser.</p>
+
+    <h2>5. Barns integritet</h2>
+    <p>Eftersom vi inte samlar in någon personlig information samlar vi inte heller in något från användare i någon ålder, barn inräknade. Om du är förälder eller vårdnadshavare och har frågor, kontakta oss på adressen nedan.</p>
+
+    <h2>6. Ändringar i policyn</h2>
+    <p>Om appens arbetssätt ändras i framtiden (till exempel om den får onlinefunktioner) uppdaterar vi den här sidan och datumet ovan innan vi släpper den nya versionen, och nämner större ändringar i appens versionsanteckningar.</p>
+
+    <h2>7. Kontakt</h2>
+    <p>Har du frågor om den här policyn, skriv till: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Utvecklare: YishenBuilds. E-post läses av utvecklaren själv, med målet att svara inom 72 timmar.</p>
+  </section>
+
+  <section lang="th" data-lang="th" hidden>
+    <h1>Mahjong Realms (雀境) นโยบายความเป็นส่วนตัว</h1>
+    <p class="meta">มีผลตั้งแต่วันที่ 18 พฤศจิกายน 2569</p>
+    <p>Mahjong Realms เป็นเกมไพ่นกกระจอกสไตล์เสฉวนสำหรับผู้เล่นคนเดียว คุณเล่นคนเดียวกับคู่ต่อสู้ที่เป็นคอมพิวเตอร์สามคน นโยบายนี้อธิบายว่าแอปจัดการกับข้อมูลของคุณอย่างไร สรุปสั้น ๆ คือ <strong>เราไม่เก็บข้อมูลส่วนบุคคลใด ๆ ของคุณ</strong></p>
+
+    <h2>1. สิ่งที่เราเก็บรวบรวม</h2>
+    <p>ไม่เก็บอะไรเลย แอปไม่มีบัญชีและไม่ต้องเข้าสู่ระบบ ไม่ขอชื่อ อีเมล หมายเลขโทรศัพท์ ตำแหน่ง รายชื่อติดต่อ รูปภาพ ไมโครโฟน หรือกล้อง และไม่อ่านตัวระบุอุปกรณ์ เช่น รหัสโฆษณา</p>
+
+    <h2>2. การใช้เครือข่าย</h2>
+    <p>แอปทำงานแบบออฟไลน์ทั้งหมด ภาพ เสียง และกติกาอยู่ในตัวแอปทั้งหมด และแอปบล็อกคำขอเครือข่ายขาออกอย่างจริงจัง ระหว่างเล่นจะไม่มีข้อมูลถูกส่งถึงเราหรือบุคคลที่สามใด ๆ</p>
+
+    <h2>3. สิ่งที่เก็บไว้ในอุปกรณ์ของคุณ</h2>
+    <p>เพื่อให้คุณเล่นต่อได้ในครั้งหน้า แอปจะบันทึกไว้ในอุปกรณ์ของคุณ ได้แก่ การตั้งค่าหน้าจอ (ธีม เปิด/ปิดเพลงพื้นหลัง เปิด/ปิดเสียงเอฟเฟกต์ ภาษา) ข้อมูลเซฟของเกมที่กำลังเล่น และแคชการคำนวณที่ช่วยให้แสดงผลเร็วขึ้น ข้อมูลเหล่านี้อยู่ในอุปกรณ์ของคุณเท่านั้น เราเข้าถึงไม่ได้ และจะถูกลบไปพร้อมกับการลบแอป</p>
+
+    <h2>4. บุคคลที่สาม การวิเคราะห์ และโฆษณา</h2>
+    <p>แอปไม่มี SDK ของบุคคลที่สาม ไม่ใช้เครื่องมือวิเคราะห์หรือสถิติ ไม่แสดงโฆษณา และไม่ติดตามข้ามแอปหรือข้ามเว็บไซต์</p>
+
+    <h2>5. ความเป็นส่วนตัวของเด็ก</h2>
+    <p>เนื่องจากเราไม่เก็บข้อมูลส่วนบุคคลใด ๆ เราจึงไม่เก็บจากผู้ใช้ทุกวัย รวมถึงเด็กด้วย หากคุณเป็นผู้ปกครองและมีข้อสงสัย โปรดติดต่อเราตามช่องทางด้านล่าง</p>
+
+    <h2>6. การเปลี่ยนแปลงนโยบาย</h2>
+    <p>หากในอนาคตวิธีการทำงานของแอปเปลี่ยนไป (เช่น เพิ่มฟีเจอร์ออนไลน์) เราจะอัปเดตหน้านี้และวันที่มีผลด้านบนก่อนเผยแพร่เวอร์ชันใหม่ และจะแจ้งการเปลี่ยนแปลงสำคัญในบันทึกการอัปเดตของแอป</p>
+
+    <h2>7. ติดต่อเรา</h2>
+    <p>หากมีคำถามเกี่ยวกับนโยบายนี้ โปรดส่งอีเมลถึง: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>ผู้พัฒนา: YishenBuilds อีเมลจะถูกอ่านโดยผู้พัฒนาเอง โดยตั้งเป้าตอบกลับภายใน 72 ชั่วโมง</p>
+  </section>
+
+  <section lang="tr" data-lang="tr" hidden>
+    <h1>Mahjong Realms (雀境) Gizlilik Politikası</h1>
+    <p class="meta">Yürürlük tarihi: 18 Kasım 2026</p>
+    <p>Mahjong Realms tek oyunculu bir Sichuan mahjong oyunudur: tek başınıza üç bilgisayar rakibe karşı oynarsınız. Bu politika, uygulamanın bilgilerinize nasıl davrandığını açıklar. Kısaca: <strong>hiçbir kişisel bilgi toplamıyoruz.</strong></p>
+
+    <h2>1. Neleri topluyoruz</h2>
+    <p>Hiçbir şeyi. Uygulamada hesap ve oturum açma yoktur. Adınızı, e-posta adresinizi, telefon numaranızı, konumunuzu, kişilerinizi, fotoğraflarınızı, mikrofonunuzu veya kameranızı istemez; reklam kimliği gibi cihaz tanımlayıcılarını da okumaz.</p>
+
+    <h2>2. Ağ kullanımı</h2>
+    <p>Uygulama tamamen çevrimdışı çalışır: grafikler, sesler ve kurallar uygulama paketinin içindedir ve uygulama dışarı giden ağ isteklerini etkin olarak engeller. Oynarken bize veya herhangi bir üçüncü tarafa hiçbir şey gönderilmez.</p>
+
+    <h2>3. Cihazınızda kalanlar</h2>
+    <p>Kaldığınız yerden devam edebilmeniz için uygulama cihazınızda şunları saklar: arayüz ayarlarınız (tema, arka plan müziği açık/kapalı, ses efektleri açık/kapalı, dil), devam eden elin kaydı ve görüntülemeyi hızlandıran bir hesaplama önbelleği. Bu veriler yalnızca cihazınızda bulunur ve bunlara erişemeyiz. Uygulama silindiğinde bunlar da silinir.</p>
+
+    <h2>4. Üçüncü taraflar, analiz ve reklamlar</h2>
+    <p>Uygulama üçüncü taraf SDK içermez, analiz veya istatistik aracı kullanmaz, reklam göstermez ve uygulamalar ya da web siteleri arasında takip yapmaz.</p>
+
+    <h2>5. Çocukların gizliliği</h2>
+    <p>Hiçbir kişisel bilgi toplamadığımız için çocuklar dâhil hiçbir yaştaki kullanıcıdan bilgi toplamayız. Ebeveyn veya vasiyseniz ve sorularınız varsa lütfen aşağıdaki adresten bize ulaşın.</p>
+
+    <h2>6. Politikadaki değişiklikler</h2>
+    <p>Uygulamanın uygulamaları ileride değişirse (örneğin çevrimiçi özellikler eklenirse), yeni sürümü yayımlamadan önce bu sayfayı ve yukarıdaki yürürlük tarihini güncelleriz; önemli değişiklikleri uygulamanın sürüm notlarında belirtiriz.</p>
+
+    <h2>7. İletişim</h2>
+    <p>Bu politika hakkında sorularınız varsa lütfen şu adrese e-posta gönderin: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Geliştirici: YishenBuilds. E-postalar geliştirici tarafından okunur; hedef 72 saat içinde yanıt vermektir.</p>
+  </section>
+
+  <section lang="vi" data-lang="vi" hidden>
+    <h1>Mahjong Realms (雀境) Chính sách quyền riêng tư</h1>
+    <p class="meta">Ngày hiệu lực: 18 tháng 11 năm 2026</p>
+    <p>Mahjong Realms là trò chơi mạt chược Tứ Xuyên dành cho một người chơi: bạn chơi một mình với ba đối thủ máy. Chính sách này giải thích cách ứng dụng xử lý thông tin của bạn. Nói ngắn gọn: <strong>chúng tôi không thu thập bất kỳ thông tin cá nhân nào.</strong></p>
+
+    <h2>1. Chúng tôi thu thập gì</h2>
+    <p>Không gì cả. Ứng dụng không có tài khoản, không cần đăng nhập. Ứng dụng không yêu cầu tên, email, số điện thoại, vị trí, danh bạ, ảnh, micro hay camera, và không đọc mã định danh thiết bị như mã định danh quảng cáo.</p>
+
+    <h2>2. Kết nối mạng</h2>
+    <p>Ứng dụng chạy hoàn toàn ngoại tuyến: hình ảnh, âm thanh và luật chơi đều nằm trong gói ứng dụng, và ứng dụng chủ động chặn mọi yêu cầu mạng gửi ra ngoài. Khi bạn chơi, không có dữ liệu nào được gửi cho chúng tôi hay bất kỳ bên thứ ba nào.</p>
+
+    <h2>3. Những gì lưu trên thiết bị của bạn</h2>
+    <p>Để bạn có thể chơi tiếp lần sau, ứng dụng lưu trên thiết bị: cài đặt giao diện (giao diện, bật/tắt nhạc nền, bật/tắt hiệu ứng âm thanh, ngôn ngữ), bản lưu của ván đang chơi và một bộ nhớ đệm tính toán giúp hiển thị nhanh hơn. Những nội dung này chỉ nằm trên thiết bị của bạn, chúng tôi không thể truy cập. Gỡ ứng dụng sẽ xóa chúng cùng lúc.</p>
+
+    <h2>4. Bên thứ ba, thống kê và quảng cáo</h2>
+    <p>Ứng dụng không chứa SDK của bên thứ ba, không dùng công cụ thống kê hay phân tích, không hiển thị quảng cáo và không theo dõi giữa các ứng dụng hoặc trang web.</p>
+
+    <h2>5. Quyền riêng tư của trẻ em</h2>
+    <p>Vì chúng tôi không thu thập bất kỳ thông tin cá nhân nào, nên cũng không thu thập từ người dùng ở bất kỳ độ tuổi nào, kể cả trẻ em. Nếu bạn là phụ huynh hoặc người giám hộ và có thắc mắc, vui lòng liên hệ chúng tôi qua địa chỉ bên dưới.</p>
+
+    <h2>6. Thay đổi chính sách</h2>
+    <p>Nếu sau này cách làm của ứng dụng thay đổi (ví dụ thêm chức năng trực tuyến), chúng tôi sẽ cập nhật trang này và ngày hiệu lực ở trên trước khi phát hành phiên bản mới; thay đổi quan trọng sẽ được nêu trong ghi chú cập nhật của ứng dụng.</p>
+
+    <h2>7. Liên hệ</h2>
+    <p>Nếu có bất kỳ câu hỏi nào về chính sách này, vui lòng gửi email đến: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+    <p>Nhà phát triển: YishenBuilds. Email do chính nhà phát triển đọc, mục tiêu phản hồi trong vòng 72 giờ.</p>
   </section>
 </main>
 <script>
@@ -120,10 +555,19 @@
       sections.forEach(function (s) { s.hidden = s.getAttribute('data-lang') !== lang; });
       buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
       document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     }
     buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-lang')); }); });
-    var wanted = (new URLSearchParams(location.search).get('lang') || navigator.language || 'zh-CN').toLowerCase();
-    show(wanted.indexOf('en') === 0 ? 'en' : /^zh-(tw|hk|mo|hant)/.test(wanted) ? 'zh-TW' : 'zh-CN');
+    var known = ['ar', 'de', 'en', 'es', 'fr', 'id', 'it', 'ja', 'ko', 'nl', 'pt-BR', 'ru', 'sv', 'th', 'tr', 'vi', 'zh-CN', 'zh-TW'];
+    function pick(tag) {
+      var parts = String(tag || '').toLowerCase().split(/[-_]/);
+      var primary = parts[0] === 'in' ? 'id' : parts[0];
+      if (primary === 'zh') return /^zh-(tw|hk|mo|hant)/.test(parts.join('-')) ? 'zh-TW' : 'zh-CN';
+      if (primary === 'pt') return 'pt-BR';
+      return known.indexOf(primary) >= 0 ? primary : 'en';
+    }
+    var asked = new URLSearchParams(location.search).get('lang');
+    show(known.indexOf(asked) >= 0 ? asked : pick(asked || navigator.language || 'zh-CN'));
   })();
 </script>
 </body>

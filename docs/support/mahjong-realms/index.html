@@ -1,83 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support | Mahjong Realms</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #243029;
-      --muted: #647267;
-      --paper: #fffaf0;
-      --line: #dacfb9;
-      --accent: #315f47;
-    }
-
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: #f4efe4;
-      line-height: 1.68;
-    }
-
-    main {
-      width: min(760px, calc(100% - 40px));
-      margin: 36px auto;
-      padding: 30px;
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      box-shadow: 0 12px 30px rgba(49, 44, 36, 0.08);
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      font-size: clamp(28px, 6vw, 42px);
-      line-height: 1.1;
-      letter-spacing: 0;
-    }
-
-    h2 {
-      margin: 28px 0 8px;
-      font-size: 20px;
-      letter-spacing: 0;
-    }
-
-    p {
-      margin: 0 0 14px;
-    }
-
-    ul {
-      margin: 0 0 18px;
-      padding-left: 22px;
-    }
-
-    .meta, .zh {
-      color: var(--muted);
-    }
-
-    .divider {
-      margin: 30px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    a {
-      color: var(--accent);
-      font-weight: 700;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>支持 · Support · 雀境 Mahjong Realms</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "PingFang TC", "Helvetica Neue", Arial, sans-serif; background: #f6f2ea; color: #2a2118; }
+  @media (prefers-color-scheme: dark) { body { background: #1c1612; color: #eadfcf; } a { color: #e8b86a; } .switch button { background: #2a211a; color: #eadfcf; border-color: #5a4630; } .switch button[aria-pressed="true"] { background: #7a4a1c; color: #fff; } }
+  main { max-width: 760px; margin: 0 auto; padding: 28px 20px 64px; }
+  h1 { font-size: 28px; margin: 12px 0 4px; }
+  h2 { font-size: 19px; margin: 28px 0 6px; }
+  p, li { margin: 6px 0; }
+  ul { padding-left: 22px; }
+  .meta { opacity: .7; font-size: 14px; }
+  .switch { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .switch button { font: inherit; font-size: 14px; padding: 6px 14px; border: 1px solid #c9b79d; border-radius: 8px; background: #fff; color: inherit; cursor: pointer; }
+  .switch button[aria-pressed="true"] { background: #7a4a1c; color: #fff; border-color: #7a4a1c; }
+  section[hidden] { display: none; }
+</style>
 </head>
 <body>
-  <main>
-    <h1>Mahjong Realms Support</h1>
-    <p class="meta">Updated: November 18, 2026</p>
-    <p>For help with Mahjong Realms, contact the developer at <a href="mailto:3649594286@qq.com">3649594286@qq.com</a>.</p>
+<main>
+  <div class="switch" role="group" aria-label="Language / 语言 / 語言">
+    <button type="button" data-lang="zh-CN" lang="zh-CN" aria-pressed="false">简体中文</button>
+    <button type="button" data-lang="zh-TW" lang="zh-TW" aria-pressed="false">繁體中文</button>
+    <button type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+    <button type="button" data-lang="ar" lang="ar" aria-pressed="false">العربية</button>
+    <button type="button" data-lang="de" lang="de" aria-pressed="false">Deutsch</button>
+    <button type="button" data-lang="es" lang="es" aria-pressed="false">Español</button>
+    <button type="button" data-lang="fr" lang="fr" aria-pressed="false">Français</button>
+    <button type="button" data-lang="id" lang="id" aria-pressed="false">Bahasa Indonesia</button>
+    <button type="button" data-lang="it" lang="it" aria-pressed="false">Italiano</button>
+    <button type="button" data-lang="ja" lang="ja" aria-pressed="false">日本語</button>
+    <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+    <button type="button" data-lang="nl" lang="nl" aria-pressed="false">Nederlands</button>
+    <button type="button" data-lang="pt-BR" lang="pt-BR" aria-pressed="false">Português (Brasil)</button>
+    <button type="button" data-lang="ru" lang="ru" aria-pressed="false">Русский</button>
+    <button type="button" data-lang="sv" lang="sv" aria-pressed="false">Svenska</button>
+    <button type="button" data-lang="th" lang="th" aria-pressed="false">ไทย</button>
+    <button type="button" data-lang="tr" lang="tr" aria-pressed="false">Türkçe</button>
+    <button type="button" data-lang="vi" lang="vi" aria-pressed="false">Tiếng Việt</button>
+  </div>
 
-    <h2>What to Include</h2>
+
+  <section lang="zh-CN" data-lang="zh-CN">
+    <h1>雀境 支持</h1>
+    <p class="meta">更新日期：2026 年 11 月 18 日</p>
+    <p>如果你在使用雀境时需要帮助，请联系开发者：<bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>。</p>
+
+    <h2>邮件中建议包含</h2>
+    <ul>
+      <li>设备型号与系统版本</li>
+      <li>App 版本号</li>
+      <li>问题截图或简短描述</li>
+      <li>问题发生在哪个主题、牌局进行到哪一步</li>
+    </ul>
+
+    <h2>回复承诺</h2>
+    <p>支持邮件由开发者人工查看，目标 72 小时内回复。</p>
+
+    <h2>常见问题</h2>
+    <p><strong>这是什么游戏？</strong><br>单机四川麻将（血战到底，换三张、定缺）：你一个人对三个电脑对手。</p>
+    <p><strong>App 是否需要联网？</strong><br>不需要，游戏完全离线运行。</p>
+    <p><strong>是否有广告或追踪？</strong><br>没有广告 SDK、分析 SDK 或第三方追踪 SDK，也不收集个人信息。详见<a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">隐私政策</a>。</p>
+    <p><strong>进度保存在哪里？</strong><br>设置和进行中的牌局只保存在你的设备上，卸载 App 会一并删除。</p>
+  </section>
+
+  <section lang="zh-TW" data-lang="zh-TW" hidden>
+    <h1>雀境 支援</h1>
+    <p class="meta">更新日期：2026 年 11 月 18 日</p>
+    <p>如果你在使用雀境時需要協助，請聯絡開發者：<bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>。</p>
+
+    <h2>郵件中建議包含</h2>
+    <ul>
+      <li>裝置型號與系統版本</li>
+      <li>App 版本號</li>
+      <li>問題截圖或簡短說明</li>
+      <li>問題發生在哪個主題、牌局進行到哪一步</li>
+    </ul>
+
+    <h2>回覆承諾</h2>
+    <p>支援郵件由開發者親自查看，目標 72 小時內回覆。</p>
+
+    <h2>常見問題</h2>
+    <p><strong>這是什麼遊戲？</strong><br>單機四川麻將（血戰到底，換三張、定缺）：你一個人對三個電腦對手。</p>
+    <p><strong>App 需要連網嗎？</strong><br>不需要，遊戲完全離線運作。</p>
+    <p><strong>有廣告或追蹤嗎？</strong><br>沒有廣告 SDK、分析 SDK 或第三方追蹤 SDK，也不蒐集個人資訊。詳見<a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">隱私權政策</a>。</p>
+    <p><strong>進度儲存在哪裡？</strong><br>設定和進行中的牌局只儲存在你的裝置上，刪除 App 時會一併刪除。</p>
+  </section>
+
+  <section lang="en" data-lang="en" hidden>
+    <h1>Mahjong Realms (雀境) Support</h1>
+    <p class="meta">Updated: November 18, 2026</p>
+    <p>For help with Mahjong Realms, contact the developer at <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>What to include</h2>
     <ul>
       <li>Your device model and system version</li>
       <li>The app version</li>
@@ -85,44 +103,383 @@
       <li>The theme and the step of the hand where the issue happened</li>
     </ul>
 
-    <h2>Reply Target</h2>
-    <p>Support email is reviewed by the developer, with a 72-hour reply target.</p>
+    <h2>Reply target</h2>
+    <p>Support email is read by the developer in person, with a 72-hour reply target.</p>
 
-    <h2>Common Questions</h2>
-    <p><strong>What kind of game is this?</strong><br>Single-player Sichuan mahjong (bloody battle rules with tile exchange and void suit): you play against three computer opponents.</p>
+    <h2>Common questions</h2>
+    <p><strong>What kind of game is this?</strong><br>Single-player Sichuan mahjong (Bloody Battle rules with Exchange Three and Void Suit): you play against three computer opponents.</p>
     <p><strong>Does the app require internet?</strong><br>No. The game runs entirely offline.</p>
-    <p><strong>Does the app include ads or tracking?</strong><br>No. The app does not include advertising SDKs, analytics SDKs, or third-party tracking SDKs, and it does not collect personal data. See the <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Privacy Policy</a>.</p>
+    <p><strong>Does the app include ads or tracking?</strong><br>No. The app contains no advertising SDK, analytics SDK or third-party tracking SDK, and it does not collect personal information. See the <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Privacy Policy</a>.</p>
     <p><strong>Where is my game saved?</strong><br>Settings and the game in progress are saved only on your device. Deleting the app deletes them.</p>
+  </section>
 
-    <div class="divider"></div>
+  <section lang="ar" data-lang="ar" hidden>
+    <h1>Mahjong Realms (雀境) الدعم</h1>
+    <p class="meta">آخر تحديث: 18 نوفمبر 2026</p>
+    <p>إذا احتجت إلى مساعدة في Mahjong Realms، فتواصل مع المطوّر عبر: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
 
-    <h1 lang="zh-Hans">雀境支持</h1>
-    <p class="zh" lang="zh-Hans">更新日期：2026 年 11 月 18 日</p>
-    <p lang="zh-Hans">如果你在使用雀境时需要帮助，请联系开发者：<a href="mailto:3649594286@qq.com">3649594286@qq.com</a>。</p>
-
-    <h2 lang="zh-Hans">邮件中建议包含</h2>
-    <ul lang="zh-Hans">
-      <li>设备型号与系统版本</li>
-      <li>App 版本号</li>
-      <li>问题截图或简短描述</li>
-      <li>问题发生在哪个主题、牌局进行到哪一步</li>
+    <h2>ما الذي يُنصح بذكره في الرسالة</h2>
+    <ul>
+      <li>طراز جهازك وإصدار النظام</li>
+      <li>رقم إصدار التطبيق</li>
+      <li>لقطة شاشة أو وصف موجز للمشكلة</li>
+      <li>السمة (الثيم) والخطوة في الجولة التي حدثت عندها المشكلة</li>
     </ul>
 
-    <h2 lang="zh-Hans">回复承诺</h2>
-    <p lang="zh-Hans">支持邮件由开发者人工查看，目标 72 小时内回复。</p>
+    <h2>موعد الرد</h2>
+    <p>يقرأ المطوّر رسائل الدعم بنفسه، والهدف الرد خلال 72 ساعة.</p>
 
-    <h2 lang="zh-Hans">常见问题</h2>
-    <p lang="zh-Hans"><strong>这是什么游戏？</strong><br>单机四川麻将（血战到底，换三张、定缺）：你一个人对三个电脑对手。</p>
-    <p lang="zh-Hans"><strong>App 是否需要联网？</strong><br>不需要，游戏完全离线运行。</p>
-    <p lang="zh-Hans"><strong>是否有广告或追踪？</strong><br>没有广告 SDK、分析 SDK 或第三方追踪 SDK，也不收集个人信息。详见<a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">隐私政策</a>。</p>
-    <p lang="zh-Hans"><strong>进度保存在哪里？</strong><br>设置和进行中的牌局只保存在你的设备上，卸载 App 会一并删除。</p>
+    <h2>أسئلة شائعة</h2>
+    <p><strong>ما نوع هذه اللعبة؟</strong><br>ماهجونغ سيتشوان فردي (قواعد المعركة الدامية مع تبديل ثلاث والنوع الفارغ): تلعب وحدك ضد ثلاثة خصوم من الحاسوب.</p>
+    <p><strong>هل يحتاج التطبيق إلى الإنترنت؟</strong><br>لا. تعمل اللعبة دون اتصال بالكامل.</p>
+    <p><strong>هل يحتوي التطبيق على إعلانات أو تتبّع؟</strong><br>لا. لا يحتوي التطبيق على أي حزمة إعلانات أو تحليلات أو تتبّع من جهات خارجية، ولا يجمع أي معلومات شخصية. راجع <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">سياسة الخصوصية</a>.</p>
+    <p><strong>أين يُحفظ تقدّمي؟</strong><br>تُحفظ الإعدادات والجولة الجارية على جهازك فقط، وحذف التطبيق يحذفها.</p>
+  </section>
 
-    <div class="divider"></div>
+  <section lang="de" data-lang="de" hidden>
+    <h1>Mahjong Realms (雀境) Support</h1>
+    <p class="meta">Stand: 18. November 2026</p>
+    <p>Wenn du Hilfe zu Mahjong Realms brauchst, schreib dem Entwickler: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
 
-    <h1 lang="zh-Hant">雀境支援</h1>
-    <p class="zh" lang="zh-Hant">更新日期：2026 年 11 月 18 日</p>
-    <p lang="zh-Hant">如果你在使用雀境時需要協助，請聯絡開發者：<a href="mailto:3649594286@qq.com">3649594286@qq.com</a>。郵件由開發者親自查看，目標 72 小時內回覆。</p>
-    <p lang="zh-Hant"><strong>需要連網嗎？</strong>不需要，遊戲完全離線運作。<strong>有廣告或追蹤嗎？</strong>沒有，也不蒐集個人資訊，詳見<a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">隱私權政策</a>。</p>
-  </main>
+    <h2>Das hilft uns in deiner E-Mail</h2>
+    <ul>
+      <li>Gerätemodell und Systemversion</li>
+      <li>App-Version</li>
+      <li>Ein Screenshot oder eine kurze Beschreibung des Problems</li>
+      <li>Das Thema und der Schritt in der Runde, an dem das Problem auftrat</li>
+    </ul>
+
+    <h2>Antwortzeit</h2>
+    <p>Support-E-Mails liest der Entwickler persönlich; Ziel ist eine Antwort innerhalb von 72 Stunden.</p>
+
+    <h2>Häufige Fragen</h2>
+    <p><strong>Was für ein Spiel ist das?</strong><br>Mahjong nach Sichuan-Art für einen Spieler (Regeln „Blutiger Kampf“ mit Drei tauschen und Fehlfarbe): Du spielst allein gegen drei Computergegner.</p>
+    <p><strong>Braucht die App Internet?</strong><br>Nein. Das Spiel läuft komplett offline.</p>
+    <p><strong>Enthält die App Werbung oder Tracking?</strong><br>Nein. Die App enthält kein Werbe-, Analyse- oder Fremd-Tracking-SDK und erhebt keine personenbezogenen Daten. Siehe <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Datenschutzerklärung</a>.</p>
+    <p><strong>Wo wird mein Spielstand gespeichert?</strong><br>Einstellungen und die laufende Runde werden nur auf deinem Gerät gespeichert. Beim Löschen der App werden sie mitgelöscht.</p>
+  </section>
+
+  <section lang="es" data-lang="es" hidden>
+    <h1>Mahjong Realms (雀境) Soporte</h1>
+    <p class="meta">Actualizado: 18 de noviembre de 2026</p>
+    <p>Si necesitas ayuda con Mahjong Realms, escribe al desarrollador: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Qué conviene incluir en el correo</h2>
+    <ul>
+      <li>Modelo del dispositivo y versión del sistema</li>
+      <li>Versión de la app</li>
+      <li>Una captura de pantalla o una breve descripción del problema</li>
+      <li>El tema y el paso de la mano en que ocurrió el problema</li>
+    </ul>
+
+    <h2>Plazo de respuesta</h2>
+    <p>El desarrollador lee personalmente los correos de soporte; el objetivo es responder en 72 horas.</p>
+
+    <h2>Preguntas frecuentes</h2>
+    <p><strong>¿Qué tipo de juego es?</strong><br>Mahjong de Sichuan para un jugador (reglas de la Batalla sangrienta con Cambio de tres y Palo vacío): juegas tú solo contra tres rivales controlados por el ordenador.</p>
+    <p><strong>¿La app necesita internet?</strong><br>No. El juego funciona totalmente sin conexión.</p>
+    <p><strong>¿La app tiene anuncios o rastreo?</strong><br>No. La app no incluye SDK de publicidad, de analítica ni de rastreo de terceros, y no recoge información personal. Consulta la <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Política de privacidad</a>.</p>
+    <p><strong>¿Dónde se guarda mi progreso?</strong><br>Los ajustes y la partida en curso se guardan solo en tu dispositivo. Al borrar la app se eliminan.</p>
+  </section>
+
+  <section lang="fr" data-lang="fr" hidden>
+    <h1>Mahjong Realms (雀境) Assistance</h1>
+    <p class="meta">Mis à jour : 18 novembre 2026</p>
+    <p>Pour obtenir de l’aide avec Mahjong Realms, contactez le développeur : <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Ce qu’il est utile d’indiquer</h2>
+    <ul>
+      <li>Le modèle de votre appareil et la version du système</li>
+      <li>La version de l’app</li>
+      <li>Une capture d’écran ou une courte description du problème</li>
+      <li>Le thème et l’étape de la manche où le problème est survenu</li>
+    </ul>
+
+    <h2>Délai de réponse</h2>
+    <p>Les e-mails d’assistance sont lus par le développeur lui-même ; l’objectif est de répondre sous 72 heures.</p>
+
+    <h2>Questions fréquentes</h2>
+    <p><strong>De quel jeu s’agit-il ?</strong><br>Mahjong du Sichuan en solo (règles de la Bataille sanglante avec Échange de trois et Famille exclue) : vous jouez seul contre trois adversaires contrôlés par l’ordinateur.</p>
+    <p><strong>L’app nécessite-t-elle Internet ?</strong><br>Non. Le jeu fonctionne entièrement hors ligne.</p>
+    <p><strong>L’app contient-elle de la publicité ou du suivi ?</strong><br>Non. L’app ne contient aucun SDK publicitaire, d’analyse ou de suivi tiers, et ne collecte aucune information personnelle. Voir la <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Politique de confidentialité</a>.</p>
+    <p><strong>Où ma progression est-elle enregistrée ?</strong><br>Les réglages et la partie en cours sont enregistrés uniquement sur votre appareil. Supprimer l’app les supprime.</p>
+  </section>
+
+  <section lang="id" data-lang="id" hidden>
+    <h1>Mahjong Realms (雀境) Dukungan</h1>
+    <p class="meta">Diperbarui: 18 November 2026</p>
+    <p>Jika Anda butuh bantuan untuk Mahjong Realms, hubungi pengembang di <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Yang sebaiknya disertakan di email</h2>
+    <ul>
+      <li>Model perangkat dan versi sistem</li>
+      <li>Versi aplikasi</li>
+      <li>Tangkapan layar atau deskripsi singkat masalah</li>
+      <li>Tema dan langkah dalam putaran saat masalah terjadi</li>
+    </ul>
+
+    <h2>Target balasan</h2>
+    <p>Email dukungan dibaca langsung oleh pengembang, dengan target balasan dalam 72 jam.</p>
+
+    <h2>Pertanyaan umum</h2>
+    <p><strong>Game apa ini?</strong><br>Mahjong Sichuan untuk satu pemain (aturan Pertarungan Berdarah dengan Tukar Tiga dan Jenis Kosong): Anda bermain sendiri melawan tiga lawan komputer.</p>
+    <p><strong>Apakah aplikasi butuh internet?</strong><br>Tidak. Game berjalan sepenuhnya offline.</p>
+    <p><strong>Apakah aplikasi memuat iklan atau pelacakan?</strong><br>Tidak. Aplikasi tidak memuat SDK iklan, analitik, maupun pelacakan pihak ketiga, dan tidak mengumpulkan informasi pribadi. Lihat <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Kebijakan Privasi</a>.</p>
+    <p><strong>Di mana progres saya disimpan?</strong><br>Pengaturan dan permainan yang sedang berjalan hanya disimpan di perangkat Anda. Menghapus aplikasi akan menghapusnya.</p>
+  </section>
+
+  <section lang="it" data-lang="it" hidden>
+    <h1>Mahjong Realms (雀境) Supporto</h1>
+    <p class="meta">Aggiornato: 18 novembre 2026</p>
+    <p>Per assistenza con Mahjong Realms, contatta lo sviluppatore: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Cosa includere nell’e-mail</h2>
+    <ul>
+      <li>Modello del dispositivo e versione del sistema</li>
+      <li>Versione dell’app</li>
+      <li>Uno screenshot o una breve descrizione del problema</li>
+      <li>Il tema e il punto della mano in cui è successo il problema</li>
+    </ul>
+
+    <h2>Tempi di risposta</h2>
+    <p>Le e-mail di supporto sono lette di persona dallo sviluppatore; l’obiettivo è rispondere entro 72 ore.</p>
+
+    <h2>Domande frequenti</h2>
+    <p><strong>Che gioco è?</strong><br>Mahjong del Sichuan per un solo giocatore (regole della Battaglia sanguinosa con Scambio di tre e Seme escluso): giochi da solo contro tre avversari controllati dal computer.</p>
+    <p><strong>L’app richiede internet?</strong><br>No. Il gioco funziona completamente offline.</p>
+    <p><strong>L’app contiene pubblicità o tracciamento?</strong><br>No. L’app non contiene SDK pubblicitari, di analisi o di tracciamento di terze parti e non raccoglie informazioni personali. Vedi l’<a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Informativa sulla privacy</a>.</p>
+    <p><strong>Dove vengono salvati i miei progressi?</strong><br>Le impostazioni e la partita in corso sono salvate solo sul tuo dispositivo. Eliminando l’app vengono eliminate.</p>
+  </section>
+
+  <section lang="ja" data-lang="ja" hidden>
+    <h1>Mahjong Realms（雀境）サポート</h1>
+    <p class="meta">更新日：2026年11月18日</p>
+    <p>Mahjong Realms についてお困りのときは、開発者までご連絡ください：<bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+
+    <h2>メールに書いていただきたいこと</h2>
+    <ul>
+      <li>端末のモデルとシステムのバージョン</li>
+      <li>アプリのバージョン</li>
+      <li>問題のスクリーンショットまたは簡単な説明</li>
+      <li>問題が起きたテーマと、局のどの場面か</li>
+    </ul>
+
+    <h2>返信の目安</h2>
+    <p>サポートメールは開発者が直接確認し、72時間以内の返信を目標としています。</p>
+
+    <h2>よくある質問</h2>
+    <p><strong>どんなゲームですか？</strong><br>一人で遊べる四川麻雀（三枚交換と定缺のある血戦到底ルール）です。コンピュータの対戦相手3人と対局します。</p>
+    <p><strong>ネット接続は必要ですか？</strong><br>不要です。ゲームは完全にオフラインで動作します。</p>
+    <p><strong>広告や追跡はありますか？</strong><br>ありません。広告・解析・第三者の追跡用SDKは含まれず、個人情報も収集しません。詳しくは<a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">プライバシーポリシー</a>をご覧ください。</p>
+    <p><strong>進行状況はどこに保存されますか？</strong><br>設定と進行中の対局は、お使いの端末にのみ保存されます。アプリを削除すると一緒に削除されます。</p>
+  </section>
+
+  <section lang="ko" data-lang="ko" hidden>
+    <h1>Mahjong Realms (雀境) 지원</h1>
+    <p class="meta">업데이트: 2026년 11월 18일</p>
+    <p>Mahjong Realms 사용 중 도움이 필요하시면 개발자에게 연락해 주세요: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+
+    <h2>메일에 포함해 주시면 좋은 내용</h2>
+    <ul>
+      <li>기기 모델과 시스템 버전</li>
+      <li>앱 버전</li>
+      <li>문제 화면 캡처 또는 간단한 설명</li>
+      <li>문제가 발생한 테마와 판의 진행 단계</li>
+    </ul>
+
+    <h2>답장 목표</h2>
+    <p>지원 메일은 개발자가 직접 확인하며, 72시간 이내 답장을 목표로 합니다.</p>
+
+    <h2>자주 묻는 질문</h2>
+    <p><strong>어떤 게임인가요?</strong><br>혼자 즐기는 쓰촨 마작(삼장 교환과 정결이 있는 혈전도저 규칙)입니다. 컴퓨터 상대 3명과 대국합니다.</p>
+    <p><strong>앱에 인터넷 연결이 필요한가요?</strong><br>아니요. 게임은 완전히 오프라인으로 실행됩니다.</p>
+    <p><strong>광고나 추적이 있나요?</strong><br>아니요. 광고, 분석, 제3자 추적 SDK가 없으며 개인정보도 수집하지 않습니다. 자세한 내용은 <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">개인정보 처리방침</a>을 참고하세요.</p>
+    <p><strong>진행 상황은 어디에 저장되나요?</strong><br>설정과 진행 중인 대국은 사용자의 기기에만 저장됩니다. 앱을 삭제하면 함께 삭제됩니다.</p>
+  </section>
+
+  <section lang="nl" data-lang="nl" hidden>
+    <h1>Mahjong Realms (雀境) Support</h1>
+    <p class="meta">Bijgewerkt: 18 november 2026</p>
+    <p>Heb je hulp nodig bij Mahjong Realms? Neem contact op met de ontwikkelaar: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Wat je het best in je e-mail zet</h2>
+    <ul>
+      <li>Het model van je apparaat en de systeemversie</li>
+      <li>De appversie</li>
+      <li>Een screenshot of korte beschrijving van het probleem</li>
+      <li>Het thema en de stap in de ronde waarbij het probleem optrad</li>
+    </ul>
+
+    <h2>Reactietijd</h2>
+    <p>Supportmails worden door de ontwikkelaar zelf gelezen; het streven is binnen 72 uur te antwoorden.</p>
+
+    <h2>Veelgestelde vragen</h2>
+    <p><strong>Wat voor spel is dit?</strong><br>Sichuan-mahjong voor één speler (regels van Bloedige Strijd met Drie ruilen en Lege soort): je speelt alleen tegen drie computertegenstanders.</p>
+    <p><strong>Heeft de app internet nodig?</strong><br>Nee. Het spel werkt volledig offline.</p>
+    <p><strong>Bevat de app advertenties of tracking?</strong><br>Nee. De app bevat geen advertentie-, analyse- of trackings-SDK van derden en verzamelt geen persoonsgegevens. Zie het <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Privacybeleid</a>.</p>
+    <p><strong>Waar wordt mijn voortgang opgeslagen?</strong><br>Instellingen en het lopende spel worden alleen op je apparaat opgeslagen. Als je de app verwijdert, verdwijnen ze ook.</p>
+  </section>
+
+  <section lang="pt-BR" data-lang="pt-BR" hidden>
+    <h1>Mahjong Realms (雀境) Suporte</h1>
+    <p class="meta">Atualizado em: 18 de novembro de 2026</p>
+    <p>Se precisar de ajuda com o Mahjong Realms, fale com o desenvolvedor: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>O que incluir no e-mail</h2>
+    <ul>
+      <li>Modelo do aparelho e versão do sistema</li>
+      <li>Versão do app</li>
+      <li>Uma captura de tela ou uma breve descrição do problema</li>
+      <li>O tema e a etapa da mão em que o problema aconteceu</li>
+    </ul>
+
+    <h2>Prazo de resposta</h2>
+    <p>Os e-mails de suporte são lidos pessoalmente pelo desenvolvedor, com meta de resposta em até 72 horas.</p>
+
+    <h2>Perguntas frequentes</h2>
+    <p><strong>Que tipo de jogo é este?</strong><br>Mahjong de Sichuan para um jogador (regras da Batalha Sangrenta com Troca de três e Naipe vazio): você joga sozinho contra três adversários do computador.</p>
+    <p><strong>O app precisa de internet?</strong><br>Não. O jogo funciona totalmente offline.</p>
+    <p><strong>O app tem anúncios ou rastreamento?</strong><br>Não. O app não tem SDK de anúncios, de análise nem de rastreamento de terceiros e não coleta informações pessoais. Veja a <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Política de Privacidade</a>.</p>
+    <p><strong>Onde fica salvo o meu progresso?</strong><br>As configurações e a partida em andamento ficam salvas apenas no seu aparelho. Excluir o app também as exclui.</p>
+  </section>
+
+  <section lang="ru" data-lang="ru" hidden>
+    <h1>Mahjong Realms (雀境) Поддержка</h1>
+    <p class="meta">Обновлено: 18 ноября 2026 г.</p>
+    <p>Если вам нужна помощь с Mahjong Realms, напишите разработчику: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Что стоит указать в письме</h2>
+    <ul>
+      <li>Модель устройства и версия системы</li>
+      <li>Версия приложения</li>
+      <li>Скриншот или краткое описание проблемы</li>
+      <li>Тема оформления и этап раздачи, на котором возникла проблема</li>
+    </ul>
+
+    <h2>Срок ответа</h2>
+    <p>Письма в поддержку читает лично разработчик; мы стараемся отвечать в течение 72 часов.</p>
+
+    <h2>Частые вопросы</h2>
+    <p><strong>Что это за игра?</strong><br>Одиночный сычуаньский маджонг (правила «Кровавой битвы» с обменом тройкой и пустой мастью): вы играете один против трёх компьютерных соперников.</p>
+    <p><strong>Нужен ли приложению интернет?</strong><br>Нет. Игра работает полностью офлайн.</p>
+    <p><strong>Есть ли в приложении реклама или отслеживание?</strong><br>Нет. В приложении нет рекламных, аналитических и сторонних SDK для отслеживания, и оно не собирает личную информацию. Подробнее в <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Политике конфиденциальности</a>.</p>
+    <p><strong>Где сохраняется мой прогресс?</strong><br>Настройки и текущая партия хранятся только на вашем устройстве. При удалении приложения они удаляются.</p>
+  </section>
+
+  <section lang="sv" data-lang="sv" hidden>
+    <h1>Mahjong Realms (雀境) Support</h1>
+    <p class="meta">Uppdaterad: 18 november 2026</p>
+    <p>Om du behöver hjälp med Mahjong Realms, kontakta utvecklaren: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Det här är bra att ta med i mejlet</h2>
+    <ul>
+      <li>Enhetens modell och systemversion</li>
+      <li>Appens version</li>
+      <li>En skärmdump eller en kort beskrivning av problemet</li>
+      <li>Temat och vilket steg i given som problemet uppstod</li>
+    </ul>
+
+    <h2>Svarstid</h2>
+    <p>Supportmejl läses av utvecklaren personligen, med målet att svara inom 72 timmar.</p>
+
+    <h2>Vanliga frågor</h2>
+    <p><strong>Vad är det för spel?</strong><br>Sichuan-mahjong för en spelare (regler för Blodig kamp med Byt tre och Tom färg): du spelar ensam mot tre datormotståndare.</p>
+    <p><strong>Behöver appen internet?</strong><br>Nej. Spelet fungerar helt offline.</p>
+    <p><strong>Innehåller appen reklam eller spårning?</strong><br>Nej. Appen innehåller inga SDK:er för reklam, analys eller spårning från tredje part och samlar inte in personuppgifter. Se <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Integritetspolicyn</a>.</p>
+    <p><strong>Var sparas mina framsteg?</strong><br>Inställningar och pågående spel sparas bara på din enhet. När du tar bort appen tas de bort.</p>
+  </section>
+
+  <section lang="th" data-lang="th" hidden>
+    <h1>Mahjong Realms (雀境) ฝ่ายสนับสนุน</h1>
+    <p class="meta">อัปเดตเมื่อ: 18 พฤศจิกายน 2026</p>
+    <p>หากต้องการความช่วยเหลือเกี่ยวกับ Mahjong Realms โปรดติดต่อผู้พัฒนาที่ <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi></p>
+
+    <h2>สิ่งที่ควรระบุในอีเมล</h2>
+    <ul>
+      <li>รุ่นอุปกรณ์และเวอร์ชันระบบ</li>
+      <li>เวอร์ชันของแอป</li>
+      <li>ภาพหน้าจอหรือคำอธิบายปัญหาสั้นๆ</li>
+      <li>ธีมและขั้นตอนของตาที่เกิดปัญหา</li>
+    </ul>
+
+    <h2>เป้าหมายการตอบกลับ</h2>
+    <p>ผู้พัฒนาอ่านอีเมลสนับสนุนด้วยตนเอง โดยตั้งเป้าตอบกลับภายใน 72 ชั่วโมง</p>
+
+    <h2>คำถามที่พบบ่อย</h2>
+    <p><strong>นี่เป็นเกมแบบไหน</strong><br>ไพ่นกกระจอกเสฉวนแบบเล่นคนเดียว (กติกาศึกนองเลือดพร้อมแลกสามใบและชนิดที่ทิ้ง) คุณเล่นคนเดียวกับคู่ต่อสู้คอมพิวเตอร์สามคน</p>
+    <p><strong>แอปต้องใช้อินเทอร์เน็ตไหม</strong><br>ไม่ต้อง เกมทำงานแบบออฟไลน์ทั้งหมด</p>
+    <p><strong>แอปมีโฆษณาหรือการติดตามไหม</strong><br>ไม่มี แอปไม่มี SDK โฆษณา SDK วิเคราะห์ หรือ SDK ติดตามของบุคคลที่สาม และไม่เก็บข้อมูลส่วนบุคคล ดู<a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">นโยบายความเป็นส่วนตัว</a></p>
+    <p><strong>ความคืบหน้าถูกบันทึกไว้ที่ไหน</strong><br>การตั้งค่าและเกมที่กำลังเล่นอยู่จะถูกบันทึกไว้ในอุปกรณ์ของคุณเท่านั้น การลบแอปจะลบข้อมูลเหล่านี้ด้วย</p>
+  </section>
+
+  <section lang="tr" data-lang="tr" hidden>
+    <h1>Mahjong Realms (雀境) Destek</h1>
+    <p class="meta">Güncelleme: 18 Kasım 2026</p>
+    <p>Mahjong Realms ile ilgili yardıma ihtiyacınız varsa geliştiriciyle iletişime geçin: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>E-postada neler belirtilmeli</h2>
+    <ul>
+      <li>Cihaz modeli ve sistem sürümü</li>
+      <li>Uygulama sürümü</li>
+      <li>Sorunun ekran görüntüsü veya kısa bir açıklaması</li>
+      <li>Sorunun yaşandığı tema ve elin hangi aşamasında olduğu</li>
+    </ul>
+
+    <h2>Yanıt hedefi</h2>
+    <p>Destek e-postalarını geliştirici bizzat okur; hedef 72 saat içinde yanıt vermektir.</p>
+
+    <h2>Sık sorulan sorular</h2>
+    <p><strong>Bu nasıl bir oyun?</strong><br>Tek kişilik Sichuan mahjong (Üçlü Takas ve Boş Tür içeren Kanlı Savaş kuralları): bilgisayar kontrolündeki üç rakibe karşı tek başınıza oynarsınız.</p>
+    <p><strong>Uygulama internet gerektiriyor mu?</strong><br>Hayır. Oyun tamamen çevrimdışı çalışır.</p>
+    <p><strong>Uygulamada reklam veya izleme var mı?</strong><br>Hayır. Uygulamada reklam, analiz veya üçüncü taraf izleme SDK’sı yoktur ve kişisel bilgi toplanmaz. <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Gizlilik Politikası</a> sayfasına bakın.</p>
+    <p><strong>İlerlemem nerede saklanıyor?</strong><br>Ayarlar ve devam eden oyun yalnızca cihazınızda saklanır. Uygulamayı silmek bunları da siler.</p>
+  </section>
+
+  <section lang="vi" data-lang="vi" hidden>
+    <h1>Mahjong Realms (雀境) Hỗ trợ</h1>
+    <p class="meta">Cập nhật: 18 tháng 11 năm 2026</p>
+    <p>Nếu cần trợ giúp về Mahjong Realms, hãy liên hệ nhà phát triển qua: <bdi dir="ltr"><a href="mailto:3649594286@qq.com">3649594286@qq.com</a></bdi>.</p>
+
+    <h2>Nên ghi gì trong email</h2>
+    <ul>
+      <li>Mẫu thiết bị và phiên bản hệ thống</li>
+      <li>Phiên bản ứng dụng</li>
+      <li>Ảnh chụp màn hình hoặc mô tả ngắn về sự cố</li>
+      <li>Chủ đề giao diện và bước của ván bài khi xảy ra sự cố</li>
+    </ul>
+
+    <h2>Thời gian phản hồi</h2>
+    <p>Email hỗ trợ do chính nhà phát triển đọc, mục tiêu phản hồi trong vòng 72 giờ.</p>
+
+    <h2>Câu hỏi thường gặp</h2>
+    <p><strong>Đây là trò chơi gì?</strong><br>Mạt chược Tứ Xuyên chơi một mình (luật Huyết Chiến với Đổi ba và Loại bỏ trống): bạn chơi một mình với ba đối thủ máy.</p>
+    <p><strong>Ứng dụng có cần internet không?</strong><br>Không. Trò chơi chạy hoàn toàn ngoại tuyến.</p>
+    <p><strong>Ứng dụng có quảng cáo hoặc theo dõi không?</strong><br>Không. Ứng dụng không có SDK quảng cáo, phân tích hay theo dõi của bên thứ ba và không thu thập thông tin cá nhân. Xem <a href="https://yishenbuilds.github.io/FourSeasonsMahjong/privacy/mahjong-realms/">Chính sách quyền riêng tư</a>.</p>
+    <p><strong>Tiến trình của tôi được lưu ở đâu?</strong><br>Cài đặt và ván đang chơi chỉ được lưu trên thiết bị của bạn. Xóa ứng dụng sẽ xóa chúng.</p>
+  </section>
+</main>
+<script>
+  (function () {
+    var sections = document.querySelectorAll('section[data-lang]');
+    var buttons = document.querySelectorAll('.switch button');
+    function show(lang) {
+      sections.forEach(function (s) { s.hidden = s.getAttribute('data-lang') !== lang; });
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === lang)); });
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-lang')); }); });
+    var known = ['ar', 'de', 'en', 'es', 'fr', 'id', 'it', 'ja', 'ko', 'nl', 'pt-BR', 'ru', 'sv', 'th', 'tr', 'vi', 'zh-CN', 'zh-TW'];
+    function pick(tag) {
+      var parts = String(tag || '').toLowerCase().split(/[-_]/);
+      var primary = parts[0] === 'in' ? 'id' : parts[0];
+      if (primary === 'zh') return /^zh-(tw|hk|mo|hant)/.test(parts.join('-')) ? 'zh-TW' : 'zh-CN';
+      if (primary === 'pt') return 'pt-BR';
+      return known.indexOf(primary) >= 0 ? primary : 'en';
+    }
+    var asked = new URLSearchParams(location.search).get('lang');
+    show(known.indexOf(asked) >= 0 ? asked : pick(asked || navigator.language || 'zh-CN'));
+  })();
+</script>
 </body>
 </html>
